@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int units;
+    double bill = 0;
+    cout << "Enter number of units consumed: ";
+    cin >> units;
+    if (units <= 100) {
+        bill = 0;
+    } 
+    else if (units <= 200) {
+        bill = 20;
+        bill += (units - 100) * 2.0;
+    } 
+    else if (units <= 500) {
+        bill = 30;
+        bill += (100 * 2.0);
+        bill += (units - 200) * 3.0;
+    } 
+    else {  
+        bill = 50;  
+        bill += (100 * 2.0);                
+        bill += (300 * 3.5);                
+        bill += (units - 500) * 4.6;        
+    }
+    cout << "Total Electricity Bill = Rs. " << bill << endl;
+    return 0;
+}
