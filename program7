@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string l,m,n,o;
+	l="Aishwarya P S";
+	m="Aish#021";
+	cout<<"Enter your username\n";
+	getline(cin,n);
+	cout<<"Enter the password\n";
+	getline(cin,o);
+	if(l==n && m==o)
+	{
+		cout<<"Logged in"<<endl;
+	}
+	else
+	{
+		cout<<"Incorrect password. Try again"<<endl;
+	}
+	return 0;
+}
