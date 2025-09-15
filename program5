@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	double unit;
+	cout<<"Number of units used :";
+	cin>>unit;
+	int watertax;
+	if(unit<100)
+	{
+		watertax=unit*1;
+		cout<<"The water tax is Rs."<<watertax;
+		return 1;	
+	}
+	if(unit>=100 && unit<=500)
+	{
+		watertax=unit*1.5;
+		cout<<"The water tax is Rs. "<<watertax;
+	}
+	else
+	{
+		watertax=unit*3;
+		cout<<"The water tax is Rs."<<watertax;
+	}
+	return 0;
+}
