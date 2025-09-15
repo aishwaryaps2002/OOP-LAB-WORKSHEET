@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int factorial(int num) 
+{
+    int fact = 1;
+    for (int i = 1; i <= num; i++) 
+	{
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() 
+{
+    int n,x,s=0,d;
+    cout << "Enter a number: ";
+    cin >> n;
+    x = n;
+    while (n > 0) 
+	{
+        d = n % 10;              
+        s += factorial(d);     
+        n = n / 10;                 
+    }
+    cout << "Sum of factorial of digits of " << x << " = " << s << endl;
+    if(s==x)
+    {
+    	cout<<"The given number is a Krishnamurthy number";
+	}
+	else
+	{
+		cout<<"The given number is not a Krishnamurthy number";
+	}
+    return 0;
+}
