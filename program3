@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Total number of population:";
+	cin>>n;
+	double menpercent=0.52;
+	double womenpercent=1.0-menpercent;
+	double totmen=n*menpercent;
+	double totwomen=n-totmen;
+	double litpercent=0.48;
+	double totlit=n*litpercent;
+	double litmenper=0.35;
+	double litmen=n*litmenper;
+	double litwomen=totlit-litmen;
+	double illitmen=totmen-litmen;
+	double illitwomen=totwomen-litwomen;
+	cout<<"Total number of Women:"<<totwomen;
+	cout<<"Total number of illiterate men:"<<illitmen;
+	cout<<"Total number of illiterate women:"<<illitwomen;
+	return 0;
+}
