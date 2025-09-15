@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int n;
+	double a,b;
+	cout<<"Enter the distance between two cities:";
+	cin>>n;
+	b=n*0.621371;
+	a=n*3280.84;
+	cout<<fixed<<setprecision(2);
+	cout<<"The distance between the two cities is "<<n<<" km or " <<b<<" miles or "<<a<<" foot." ;
+	return 0;	
+}
