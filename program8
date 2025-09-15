@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,n,d,s=0,c=0;
+    cout<<"Enter the Number: ";
+    cin>>a;
+    n=a;
+    while(n>9)
+    {
+        while(n!=0)
+        {
+            d=n%10;
+            s+=d;
+            n=n/10;
+        }
+        c++;
+        n=s;
+        s=0;
+    }
+    cout<<"the digital root of "<<a<<" is "<<n<<", a result which was in this obtained in "<<c<<" steps.";
+}
