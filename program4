@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cmath>   // for sqrt()
+using namespace std;
+int main() {
+    int a, b, c;
+    double x1, x2;
+    cout << "Enter the coefficients a,b and c : ";
+    cin >> a>>b>>c;
+    double d = (b * b) - (4 * a * c);
+    if (d < 0) {
+        cout << "The roots are complex and conjugate." << endl;
+    } 
+    else if(d==0){
+        cout<<"The roots are real and equal.";
+        x1=(-b)/(2*a);
+        cout<<"The Roots of the equation: " 
+             << a << "X^2";
+        cout << "+" << b << "X";
+        cout << "+" << c;
+        cout << " is: " << x1 << endl;
+    }
+    else {
+        cout<<"The Roots are real and distinct.";
+        x1 = (-b + sqrt(d)) / (2 * a);
+        x2 = (-b - sqrt(d)) / (2 * a);
+        cout << "The Roots of the equation: " << a << "X^2";
+        cout << "+" << b << "X";
+        cout << b << "X";
+        cout << "+" << c;
+        cout << " is: " << x1 << " & " << x2 << endl;
+    }
+    return 0;
+}
+
