@@ -1,0 +1,18 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double assessed_val,taxable_amt,property_tax;
+	double taxrate=1.05;
+	cout<<"Enter the Assessed value : ";
+	cin>>assessed_val;
+	taxable_amt=assessed_val*0.92;
+	property_tax=(taxable_amt/100)*taxrate;
+	cout<<fixed<<setprecision(2);
+	cout<<"Assessed value : "<<assessed_val<<endl;
+	cout<<"Taxable amount : "<<taxable_amt<<endl;
+	cout<<"Tax rate for each Rs.100 is "<<taxrate<<endl;
+	cout<<"Property Tax : "<<property_tax<<endl;
+	return 0; 
+}
